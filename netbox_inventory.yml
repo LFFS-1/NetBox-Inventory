@@ -1,4 +1,4 @@
-plugin: netbox.netbox.nb_inventory
+plugin: ansible_collections.netbox.netbox.plugins.inventory.nb_inventory
 api_endpoint: http://10.100.26.156:8000
 token: 4462a5c4afcfde6663479400d5e7206bb7e73cf4
 validate_certs: False
