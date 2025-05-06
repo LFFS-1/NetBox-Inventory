@@ -1,1 +1,9 @@
-
+! VLAN configuration for {{ vlan.vid }} – {{ vlan.name }}
+vlan {{ vlan.vid }}
+ name {{ vlan.name }}
+!
+interface Vlan{{ vlan.vid }}
+ description SVI for {{ vlan.name }}
+ ip address {{ vlan.primary_ip4.address.split('/')[0] }} {{ vlan.primary_ip4.prefix_length }}
+ no shutdown
+!
